@@ -1,94 +1,157 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Pessoal</title>
-    <style>
-        /* Ajuste de margens para evitar espaços indesejados */
-        html, body {
-            margin: 10;
-            padding: 25px;;
-        }
-        
-        .wrapper {
-            width: 100%;
-            height: 100vh;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
 
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
+    .wrapper {
+        width: 80%; 
+        margin: 0 auto; 
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 
-        .container img {
-            position: absolute;
-            top: 12px;
-            left: 25px;
-            width: 80px;
-            height: auto;
-            border-radius: 50%;
-        }
+    .container {
+        position: relative;
+        width: 80%;
+        height: 60%;
+        margin: 25px;
+        text-align: left;
+    }
 
-        .container1 img {
-            top: 12px;
-            left: 12px;
-            width: 100px;
-            height: auto;
-            object-fit: cover;
-        }
+    .container img {
+        position: absolute;
+        top: 12px;
+        left: 25px;
+        width: 80px;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-        .container2 img {
-            position: relative;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 0 10px;
-        }
+    .container1 img {
+        top: 12px;
+        left: 12px;
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    .container2 img {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-        header {
-            background-color: #4567b7;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-        nav {
-            background-color: #6495ed;
-            padding: 10px 0;
-            text-align: center;
-        }
+    header {
+        background-color: #4567b7;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+    nav {
+        background-color: #6495ed;
+        padding: 10px 0;
+        text-align: center;
+        display: flexbox;
+    }
 
-        section {
-            padding: 10px;
-        }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
 
-        section_formacao {
-            padding: 50px;
-            white-space: pre;
-            margin: 0 10px;
-            margin-bottom: 20px;
-        }
+    section {
+        padding: 10px;
+    }
 
-        footer {
-            background-color: #2f4f7f;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-      
+    section.formacao {
+        padding: 50px;
+        white-space: pre;
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+    .contact-box {
+        max-width: 150px;
+        margin: 10px auto; 
+        background-color: #f8f9fa; 
+        padding: 30px; 
+        border-radius: 20px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: all 0.3s ease; 
+    }
+    
+    .contact-box:hover {
+        transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
+    }
+    
+    .contact-box h2 {
+        color: #333; /* Cor do título */
+        font-size: 24px; /* Tamanho do título */
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+    
+    .contact-box p {
+        color: #555; /* Cor do texto */
+        font-size: 16px; /* Tamanho do texto */
+        line-height: 1.6; /* Espaçamento entre linhas */
+    }
+    
+    .contact-box a {
+        color: #007bff; /* Cor do link */
+        text-decoration: none; /* Remove sublinhado */
+        transition: color 0.3s; /* Transição suave de cor */
+    }
+    
+    .contact-box a:hover {
+        color: #0056b3; /* Cor do link ao passar o mouse */
+    }
+    
+    
+
+    footer {
+        background-color: #2f4f7f;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo-button {
+        text-decoration: none; /* Remove sublinhado */
+    }
+
+    .logo-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px; 
+        padding: 10px; 
+    }
+
+    .logo-button img {
+        vertical-align: middle;
+    }
+
+    .logo-button:hover {
+        opacity: 1;
+    }
+
+</style>
